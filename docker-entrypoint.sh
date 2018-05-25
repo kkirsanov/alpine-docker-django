@@ -11,7 +11,7 @@ case "$1" in
         python3.6 manage.py collectstatic --noinput
         exec gunicorn app.wsgi -b 0.0.0.0:8000 -w 2 -t 120
     ;;
-    celery-galaxy)
+    celery)
         echo "Running Celery..."
         exec celery worker -A app -Q queue --concurrency=4
     ;;

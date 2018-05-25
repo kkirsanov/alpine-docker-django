@@ -1,26 +1,9 @@
 version: '2'
 services:
-  app:
+  web:
     build: .
     ports:
       - '0.0.0.0:8000:8000'
     command: web
-    stdin_open: true
-    tty: true
     env_file:
       - .env
-    depends_on:
-      - postgres
-      - redis
-  postgres:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: root
-      POSTGRES_USER: root
-    ports:
-      - 127.0.0.1:5432:5432
-  redis:
-    image: "redis:alpine"
-    #ports:
-    #  - '127.0.0.1:6379:6379'

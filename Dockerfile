@@ -19,8 +19,4 @@ WORKDIR /opt/app/
 
 EXPOSE 8000
 
-VOLUME /opt/notificator/db/
-VOLUME /opt/notificator/static/
-
-
 ENTRYPOINT ["/opt/app/docker-entrypoint.sh"]
