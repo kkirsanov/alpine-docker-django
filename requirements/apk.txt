@@ -1,0 +1,6 @@
+libxml2
+libxslt
+libpq
+jpeg
+python3
+tzdata

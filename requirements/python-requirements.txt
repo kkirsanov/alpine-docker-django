@@ -1,0 +1,14 @@
+# core components
+django
+django-environ
+django-extensions
+django_filter
+django-prettyjson
+gunicorn
+kafka
+psycopg2
+pytz
+raven
+fastavro
+redis
+requests
